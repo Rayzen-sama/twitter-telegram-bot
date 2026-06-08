@@ -1,9 +1,7 @@
 name: Twitter Bot
 
 on:
-  schedule:
-    - cron: "*/15 * * * *"   # every 15 minutes
-  workflow_dispatch:           # allow manual trigger
+  workflow_dispatch:           # triggered by cron-job.org every 10 minutes
 
 jobs:
   run-bot:
